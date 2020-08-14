@@ -269,9 +269,9 @@
           },
           {
             "name": "remove_associated_instances",
-            "in": "path",
+            "in": "query",
             "description": "Remove instances associated to the batch",
-            "required": false,
+            "required": true,
             "type": "boolean"
           }
         ],
@@ -506,16 +506,21 @@
           },
           {
             "name": "address_family",
-            "in": "Address family for BGP session. Expected value is \"ipv4\" or \"ipv6\".",
-            "description": true,
-            "required": "string"
+            "in": "body",
+            "description": "Address family for BGP session. Expected value is \"ipv4\" or \"ipv6\".",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           },
           {
             "name": "default_route",
             "in": "body",
             "description": "Default route",
             "required": false,
-            "type": "boolean"
+            "schema": {
+              "type": "boolean"
+            }
           }
         ],
         "responses": {
@@ -633,7 +638,9 @@
             "in": "body",
             "description": "Default route",
             "required": true,
-            "type": "boolean"
+            "schema": {
+              "type": "boolean"
+            }
           }
         ],
         "responses": {
@@ -2003,6 +2010,14 @@
         ],
         "parameters": [
           {
+            "name": "id",
+            "in": "path",
+            "description": "Project ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
             "name": "include",
             "in": "query",
             "description": "related attributes to include",
@@ -2632,7 +2647,7 @@
           "Projects",
           "IPAddresses"
         ],
-        "filter_tags": [
+        "x-filter_tags": [
           "Projects",
           "IPAddresses"
         ],
@@ -2906,6 +2921,14 @@
           "Memberships"
         ],
         "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Project ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
           {
             "name": "include",
             "in": "query",
@@ -3383,12 +3406,22 @@
         ],
         "parameters": [
           {
-            "name": "project_id",
+            "name": "id",
             "in": "path",
-            "description": "Project UUID",
+            "description": "HardwareReservation UUID",
             "required": true,
             "type": "string",
             "format": "uuid"
+          },
+          {
+            "name": "project_id",
+            "in": "body",
+            "description": "Project UUID",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
           }
         ],
         "responses": {
@@ -3859,7 +3892,7 @@
       "post": {
         "summary": "Receive an OTP per sms",
         "description": "Sends an OTP to the user's mobile phone.",
-        "operationId": "regenerateCodes",
+        "operationId": "receiveCodes",
         "tags": [
           "Otps"
         ],
@@ -4596,7 +4629,9 @@
             "in": "body",
             "description": "UUID or VNID of the virtual network to assign",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -8372,6 +8407,9 @@
         },
         "peer_ips": {
           "type": "array",
+          "items": {
+            "type": "string"
+          },
           "description": "A list of one or more IP addresses to use for the Peer IP section of your BGP configuration. For non-multihop sessions, this will typically be a single gateway address for the device. For multihop sessions, it will be a list of IPs.",
           "example": "[\"10.32.16.0\"] or [\"169.254.255.1\", \"169.254.255.2\"]"
         },
