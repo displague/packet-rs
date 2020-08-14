@@ -1,0 +1,11 @@
+# CapacityServerUnavailable
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**servers** | Option<[**Vec<crate::models::ServerUnavailableInfo>**](ServerUnavailableInfo.md)> |  | [optional]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
