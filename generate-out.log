@@ -1,0 +1,433 @@
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: rust (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'rust' is considered stable.
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] INFO  o.o.codegen.DefaultGenerator - Model OperatingSystemList not generated since it's an alias to array (without property) and `generateAliasAsModel` is set to false (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model SpotPricesDatapointsList not generated since it's an alias to array (without property) and `generateAliasAsModel` is set to false (default)
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/address.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Address.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/batch.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Batch.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/batches_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BatchesList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_config.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpConfig.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_config_request_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpConfigRequestInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_neighbor_data.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpNeighborData.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_neighbor_data_routes_in.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpNeighborDataRoutesIn.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_neighbor_data_routes_out.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpNeighborDataRoutesOut.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_session.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_session_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpSessionInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_session_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpSessionList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/bgp_session_neighbors.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BgpSessionNeighbors.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_level_per_baremetal.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityLevelPerBaremetal.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_per_baremetal.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityPerBaremetal.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_per_facility.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityPerFacility.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_per_new_facility.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityPerNewFacility.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_report.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityReport.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/capacity_server_unavailable.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityServerUnavailable.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/coordinates.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Coordinates.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/create_email_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CreateEmailInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/device.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Device.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/device_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/DeviceCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/device_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/DeviceList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/device_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/DeviceUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/device_usage.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/DeviceUsage.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/device_usage_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/DeviceUsageList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/email.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Email.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/email_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EmailInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/entitlement.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Entitlement.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/entitlement_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EntitlementInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/entitlement_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EntitlementList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/event.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Event.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/event_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EventInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/event_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EventList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/event_type.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EventType.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/event_type_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EventTypeList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/facility.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Facility.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/facility_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/FacilityList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/hardware_location.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/HardwareLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/hardware_reservation.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/HardwareReservation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/hardware_reservation_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/HardwareReservationList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/href.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Href.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/instances_batch_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InstancesBatchCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/instances_batch_create_input_batches.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InstancesBatchCreateInputBatches.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/instances_batch_create_input_ip_addresses.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InstancesBatchCreateInputIpAddresses.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/interconnection.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Interconnection.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/interconnection_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InterconnectionCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/interconnection_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InterconnectionList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/interconnection_port.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InterconnectionPort.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/interconnection_port_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InterconnectionPortList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/interconnection_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InterconnectionUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/internet_gateway.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InternetGateway.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/invitation.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Invitation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/invitation_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InvitationInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/invitation_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InvitationList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_address_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpAddressInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_assignment.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpAssignment.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_assignment_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpAssignmentInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_assignment_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpAssignmentList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_availabilities_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpAvailabilitiesList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_reservation.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpReservation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_reservation_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpReservationList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ip_reservation_request_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IpReservationRequestInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/license.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/License.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/license_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/LicenseCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/license_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/LicenseList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/license_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/LicenseUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/membership.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Membership.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/membership_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/MembershipInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/membership_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/MembershipList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/meta.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Meta.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/new_password.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/NewPassword.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/notification.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Notification.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/notification_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/NotificationList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/operating_system.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OperatingSystem.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/organization.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Organization.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/organization_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OrganizationInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/organization_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OrganizationList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/parent_block.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ParentBlock.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/payment_method.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PaymentMethod.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/payment_method_billing_address.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PaymentMethodBillingAddress.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/payment_method_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PaymentMethodCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/payment_method_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PaymentMethodList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/payment_method_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PaymentMethodUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/plan.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Plan.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/plan_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PlanList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/plan_version.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PlanVersion.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/port.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Port.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/port_assign_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PortAssignInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/port_convert_layer3_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PortConvertLayer3Input.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/port_convert_layer3_input_request_ips.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PortConvertLayer3InputRequestIps.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Project.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project_create_from_root_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectCreateFromRootInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project_usage.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectUsage.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/project_usage_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectUsageList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/recovery_code_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/RecoveryCodeList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/region.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Region.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/regions_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/RegionsList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/server_info.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ServerInfo.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/server_unavailable_info.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ServerUnavailableInfo.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/snapshot_policy.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SnapshotPolicy.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/snapshot_policy_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SnapshotPolicyInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_market_prices_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotMarketPricesList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_market_request.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotMarketRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_market_request_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotMarketRequestCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_market_request_create_input_instance_attributes.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotMarketRequestCreateInputInstanceAttributes.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_market_request_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotMarketRequestList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_prices_datapoints.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotPricesDatapoints.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_prices_history_report.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotPricesHistoryReport.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_prices_per_baremetal.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotPricesPerBaremetal.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_prices_per_facility.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotPricesPerFacility.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_prices_per_new_facility.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotPricesPerNewFacility.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/spot_prices_report.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotPricesReport.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ssh_key.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SshKey.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ssh_key_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SshKeyInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/ssh_key_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SshKeyList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/subscribable_event.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SubscribableEvent.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/subscribable_events_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SubscribableEventsList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/support_request_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SupportRequestInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/timeframe.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Timeframe.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/transfer_request.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/TransferRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/transfer_request_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/TransferRequestInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/transfer_request_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/TransferRequestList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/update_email_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UpdateEmailInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/user.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/User.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/user_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UserCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/user_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UserList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/user_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UserUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/userdata.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Userdata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/virtual_circuit.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VirtualCircuit.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/virtual_circuit_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VirtualCircuitList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/virtual_circuit_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VirtualCircuitUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/virtual_network.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VirtualNetwork.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/virtual_network_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VirtualNetworkCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/virtual_network_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VirtualNetworkList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/Volume.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_attachment.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeAttachment.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_attachment_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeAttachmentInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_attachment_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeAttachmentList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_create_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeCreateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_snapshot.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeSnapshot.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_snapshot_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeSnapshotInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_snapshot_list.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeSnapshotList.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/volume_update_input.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumeUpdateInput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/vpn_config.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VpnConfig.md
+[main] WARN  o.o.codegen.DefaultCodegen - Empty operationId found for path: get /incidents. Renamed to auto-generated operationId: incidentsGet
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Unknown `format` integer detected for type `number`. Defaulting to `number`
+[main] WARN  o.o.codegen.DefaultCodegen - Empty operationId found for path: post /hardware-reservations/{id}/move. Renamed to auto-generated operationId: hardware_reservationsIdMovePost
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/bgp_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BGPApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/batches_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/BatchesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/capacity_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/CapacityApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/connections_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ConnectionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/devices_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/DevicesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/emails_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EmailsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/events_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/EventsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/facilities_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/FacilitiesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/hardware_reservations_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/HardwareReservationsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/ip_addresses_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IPAddressesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/incidents_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/IncidentsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/internet_gateways_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InternetGatewaysApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/invitations_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/InvitationsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/licenses_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/LicensesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/market_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/MarketApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/memberships_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/MembershipsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/notifications_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/NotificationsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/operating_system_versions_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OperatingSystemVersionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/operating_systems_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OperatingSystemsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/organizations_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OrganizationsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/otps_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/OtpsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/password_reset_tokens_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PasswordResetTokensApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/payment_methods_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PaymentMethodsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/plans_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PlansApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/ports_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/PortsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/projects_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/ProjectsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/regions_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/RegionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/ssh_keys_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SSHKeysApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/spot_market_request_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/SpotMarketRequestApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/transfer_requests_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/TransferRequestsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/two_factor_auth_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/TwoFactorAuthApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/usages_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UsagesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/user_verification_tokens_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UserVerificationTokensApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/userdata_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UserdataApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/users_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/UsersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/vla_ns_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VLANsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/vpn_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VPNApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/volumes_api.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/docs/VolumesApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/.travis.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/models/mod.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/lib.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/Cargo.toml
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/mod.rs
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/src/apis/configuration.rs
+[main] INFO  o.o.codegen.TemplateManager - Skipped /local/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /local/.openapi-generator/FILES
