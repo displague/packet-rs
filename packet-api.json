@@ -2,34 +2,38 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "Packet API",
-    "description": "This is the API for Packet. Interact with your devices, user account, and projects.",
-    "termsOfService": "https://www.packet.com/about/terms/",
+    "title": "Metal API",
+    "description": "This is the API for Equinix Metal Product. Interact with your devices, user account, and projects.",
+    "termsOfService": "https://metal.equinix.com/legal/",
     "contact": {
-      "name": "Packet API Team",
-      "email": "support@packet.com"
+      "name": "Equinix Metal API Team",
+      "email": "support@equinixmetal.com"
     },
     "license": {
-      "name": "Packet",
-      "url": "https://www.packet.com/about/terms/"
+      "name": "Equinix Metal",
+      "url": "https://metal.equinix.com/legal/"
     }
   },
   "tags": [
     {
       "name": "Batches",
-      "description": "Manage device batches. See project endpoints to list batches for a particular project. Check out the product docs to learn more about [Batch Deployment](https://www.packet.com//developers/docs/servers/key-features/batch-deployment/)."
+      "description": "Manage device batches. See project endpoints to list batches for a particular project. Check out the product docs to learn more about [Batch Deployment](https://metal.equinix.com/developers/docs/deploy/batch-deployment/)."
     },
     {
       "name": "BGP",
-      "description": "Manage BGP configs and sessions. See device endpoints to create and list BGP sessions for a particular device. Check out the product docs to learn more about [Local and Global BGP](https://www.packet.com//developers/docs/network/advanced/local-and-global-bgp/)."
+      "description": "Manage BGP configs and sessions. See device endpoints to create and list BGP sessions for a particular device. Check out the product docs to learn more about [Local and Global BGP](https://metal.equinix.com/developers/docs/networking/local-global-bgp/)."
     },
     {
       "name": "Capacity",
-      "description": "Capacity Management. Check out the product docs to learn more about [Capacity](https://www.packet.com//developers/docs/getting-started/deployment-options/capacity/)."
+      "description": "Capacity Management. Check out the product docs to learn more about [Capacity](https://metal.equinix.com/developers/docs/locations/capacity/)."
+    },
+    {
+      "name": "Connections",
+      "description": "Network Interconnections. See Instructions to create Network Interconnections at Check out the product docs to learn more about [Equinix Fabric](https://metal.equinix.com/developers/docs/networking/fabric/)."
     },
     {
       "name": "Devices",
-      "description": "Device Management. Check out the product docs to learn more about [Server Devices](https://www.packet.com//developers/docs/servers/)."
+      "description": "Device Management. Check out the product docs to learn more about [Server Devices](https://metal.equinix.com/developers/docs/servers/)."
     },
     {
       "name": "Emails",
@@ -41,19 +45,19 @@
     },
     {
       "name": "Facilities",
-      "description": "Facility Management. Check out the product docs to learn more about [Facilities](https://www.packet.com//developers/docs/getting-started/facilities/)."
+      "description": "Facility Management. Check out the product docs to learn more about [Facilities](https://metal.equinix.com/developers/docs/locations/)."
     },
     {
       "name": "HardwareReservations",
-      "description": "Hardware Reservation Management. Check out the product docs to learn more about [Reserved Hardware](https://www.packet.com//developers/docs/getting-started/deployment-options/reserved-hardware/)."
+      "description": "Hardware Reservation Management. Check out the product docs to learn more about [Reserved Hardware](https://metal.equinix.com/developers/docs/deploy/reserved/)."
     },
     {
       "name": "Invitations",
-      "description": "Manage invitations. See project endpoints to create a new invitation. Check out the product docs to learn more about [Invitations](https://www.packet.com//developers/docs/getting-started/support/organizations-and-users/)."
+      "description": "Manage invitations. See project endpoints to create a new invitation. Check out the product docs to learn more about [Invitations](https://metal.equinix.com/developers/docs/accounts/)."
     },
     {
       "name": "IPAddresses",
-      "description": "Manage IP addresses. See device and project endpoints to list and create IP assignments for a particular project or device. Check out the product docs to learn more about [the basic networking features](https://www.packet.com//developers/docs/network/basic/)."
+      "description": "Manage IP addresses. See device and project endpoints to list and create IP assignments for a particular project or device. Check out the product docs to learn more about [the basic networking features](https://metal.equinix.com/developers/docs/networking/standard-ips/)."
     },
     {
       "name": "Licenses",
@@ -61,7 +65,7 @@
     },
     {
       "name": "Memberships",
-      "description": "Membership Management (Project). Check out the product docs to learn more about [Membership](https://www.packet.com//developers/docs/getting-started/support/organizations-and-users/)."
+      "description": "Membership Management (Project). Check out the product docs to learn more about [Membership](https://metal.equinix.com/developers/docs/accounts/)."
     },
     {
       "name": "Notifications",
@@ -69,15 +73,15 @@
     },
     {
       "name": "OperatingSystems",
-      "description": "Operating System Management. Check out the product docs to learn more about [Operating Systems choices](https://www.packet.com//developers/docs/servers/operating-systems/overview/)."
+      "description": "Operating System Management. Check out the product docs to learn more about [Operating Systems choices](https://metal.equinix.com/developers/docs/operating-systems/)."
     },
     {
       "name": "Organizations",
-      "description": "Organizations Management. Check out the product docs to learn more about [Organizations](https://www.packet.com//developers/docs/getting-started/support/organizations-and-users/)."
+      "description": "Organizations Management. Check out the product docs to learn more about [Organizations](https://metal.equinix.com/developers/docs/accounts/)."
     },
     {
       "name": "Otps",
-      "description": "Otps ManagementCheck out the product docs to learn more about [OTP](https://www.packet.com//developers/docs/getting-started/support/two-factor/)."
+      "description": "Otps ManagementCheck out the product docs to learn more about [OTP](https://metal.equinix.com/developers/docs/accounts/two-factor-authentication/)."
     },
     {
       "name": "PaymentMethods",
@@ -85,23 +89,27 @@
     },
     {
       "name": "Plans",
-      "description": "Plan Management (Device). Check out the product docs to learn more about [Device Plans](https://www.packet.com//cloud/servers/)."
+      "description": "Plan Management (Device). Check out the product docs to learn more about [Device Plans](https://metal.equinix.com/developers/docs/servers/)."
     },
     {
       "name": "Ports",
-      "description": "Port ManagementCheck out the product docs to learn more about [Port configurations](https://www.packet.com//developers/docs/network/advanced/layer-2/)."
+      "description": "Port ManagementCheck out the product docs to learn more about [Port configurations](https://metal.equinix.com/developers/docs/networking/layer2/)."
     },
     {
       "name": "Projects",
-      "description": "Project Management. Check out the product docs to learn more about [Projects](https://www.packet.com//developers/docs/getting-started/support/organizations-and-users/)."
+      "description": "Project Management. Check out the product docs to learn more about [Projects](https://metal.equinix.com/developers/docs/accounts/)."
+    },
+    {
+      "name": "Regions",
+      "description": "Regions Listing"
     },
     {
       "name": "Market",
-      "description": "Spot Market Prices Management. Check out the product docs to learn more about [Spot Market features](https://www.packet.com//developers/docs/getting-started/deployment-options/spot-market/)."
+      "description": "Spot Market Prices Management. Check out the product docs to learn more about [Spot Market features](https://metal.equinix.com/developers/docs/deploy/spot-market/)."
     },
     {
       "name": "SpotMarketRequest",
-      "description": "Spot Market Requests Management. Check out the product docs to learn more about [Spot Market features](https://www.packet.com//developers/docs/getting-started/deployment-options/spot-market/)."
+      "description": "Spot Market Requests Management. Check out the product docs to learn more about [Spot Market features](https://metal.equinix.com/developers/docs/deploy/spot-market/)."
     },
     {
       "name": "SSHKeys",
@@ -113,7 +121,7 @@
     },
     {
       "name": "TwoFactorAuth",
-      "description": "Two Factor Authentication Management. Check out the product docs to learn more about [2FA](https://www.packet.com//developers/docs/getting-started/support/two-factor/)."
+      "description": "Two Factor Authentication Management. Check out the product docs to learn more about [2FA](https://metal.equinix.com/developers/docs/accounts/two-factor-authentication/)."
     },
     {
       "name": "Usages",
@@ -133,15 +141,15 @@
     },
     {
       "name": "VLANs",
-      "description": "Manage virtual networks (VLANs). See project endpoints to list and create virtual networks. Check out the product docs to learn more about [VLANs](https://www.packet.com//developers/docs/network/advanced/native-vlan/)."
+      "description": "Manage virtual networks (VLANs). See project endpoints to list and create virtual networks. Check out the product docs to learn more about [VLANs](https://metal.equinix.com/developers/docs/networking/layer2/)."
     },
     {
       "name": "Volumes",
-      "description": "Volume Management (Block Storage). Check out the product docs to learn more about [Elastic Block Storage](https://www.packet.com//developers/docs/storage/ebs/)."
+      "description": "Volume Management (Block Storage). "
     },
     {
       "name": "VPN",
-      "description": "VPN Management. Check out the product docs to learn more about [Doorman VPN](https://www.packet.com//developers/docs/network/basic/doorman/)."
+      "description": "VPN Management. Check out the product docs to learn more about [Doorman VPN](https://metal.equinix.com/developers/docs/networking/features/)."
     }
   ],
   "securityDefinitions": {
@@ -158,7 +166,7 @@
       ]
     }
   ],
-  "host": "api.packet.net",
+  "host": "api.equinix.com/metal/v1",
   "consumes": [
     "application/json"
   ],
@@ -269,10 +277,12 @@
           },
           {
             "name": "remove_associated_instances",
-            "in": "query",
-            "description": "Remove instances associated to the batch",
+            "in": "body",
+            "description": "Default route",
             "required": true,
-            "type": "boolean"
+            "schema": {
+              "type": "boolean"
+            }
           }
         ],
         "responses": {
@@ -505,25 +515,22 @@
             "format": "uuid"
           },
           {
-            "name": "address_family",
+            "name": "bgp_session",
             "in": "body",
-            "description": "Address family for BGP session. Expected value is \"ipv4\" or \"ipv6\".",
-            "required": false,
+            "description": "BGP session to create",
+            "required": true,
             "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "default_route",
-            "in": "body",
-            "description": "Default route",
-            "required": false,
-            "schema": {
-              "type": "boolean"
+              "$ref": "#/definitions/BGPSessionInput"
             }
           }
         ],
         "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/BgpSession"
+            }
+          },
           "201": {
             "description": "created",
             "schema": {
@@ -930,6 +937,65 @@
         }
       }
     },
+    "/organizations/{id}/events": {
+      "get": {
+        "summary": "Retrieve organization's events",
+        "description": "Returns a list of events for a single organization",
+        "operationId": "findOrganizationEvents",
+        "tags": [
+          "Events",
+          "Organizations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Organization UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "include",
+            "in": "query",
+            "description": "related attributes to include",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "page to display, default to 1, max 100_000",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "description": "items per page, default to 10, max 1_000",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/EventList"
+            }
+          },
+          "401": {
+            "description": "unauthorized"
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
     "/projects/{id}/events": {
       "get": {
         "summary": "Retrieve project's events",
@@ -1181,20 +1247,6 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "page to display, default to 1, max 100_000",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "per_page",
-            "in": "query",
-            "description": "items per page, default to 10, max 1_000",
-            "required": false,
-            "type": "integer"
           }
         ],
         "responses": {
@@ -1240,20 +1292,6 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "page to display, default to 1, max 100_000",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "per_page",
-            "in": "query",
-            "description": "items per page, default to 10, max 1_000",
-            "required": false,
-            "type": "integer"
           }
         ],
         "responses": {
@@ -1279,7 +1317,7 @@
       "get": {
         "summary": "Retrieve all hardware reservations for a given project",
         "description": "Provides a collection of hardware reservations for a given project.",
-        "operationId": "findHardwareReservations",
+        "operationId": "findProjectHardwareReservations",
         "tags": [
           "Projects",
           "HardwareReservations"
@@ -1843,6 +1881,459 @@
         }
       }
     },
+    "/organizations/{organization_id}/connections": {
+      "post": {
+        "summary": "Request a new connection for the organization",
+        "description": "Creates a new connection request. A Project ID must be specified in the request body for connections on shared ports.",
+        "operationId": "createOrganizationInterconnection",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "description": "UUID of the organization",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "connection",
+            "in": "body",
+            "description": "Connection details",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InterconnectionCreateInput"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "created",
+            "schema": {
+              "$ref": "#/definitions/Interconnection"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      },
+      "get": {
+        "summary": "List organization connections",
+        "description": "List the connections belonging to the organization",
+        "operationId": "organizationListInterconnections",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "description": "UUID of the organization",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InterconnectionList"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/connections": {
+      "post": {
+        "summary": "Request a new connection for the project's organization",
+        "description": "Creates a new connection request",
+        "operationId": "createProjectInterconnection",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "description": "UUID of the project",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "connection",
+            "in": "body",
+            "description": "Connection details",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InterconnectionCreateInput"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "created",
+            "schema": {
+              "$ref": "#/definitions/Interconnection"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          }
+        }
+      },
+      "get": {
+        "summary": "List project connections",
+        "description": "List the connections belonging to the project",
+        "operationId": "projectListInterconnections",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "description": "UUID of the project",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InterconnectionList"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
+    "/connections/{id}": {
+      "get": {
+        "summary": "Get connection",
+        "description": "Get the details of a connection",
+        "operationId": "getInterconnection",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Connection UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Interconnection"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update connection",
+        "description": "Update the details of a connection",
+        "operationId": "updateInterconnection",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Connection UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "connection",
+            "in": "body",
+            "description": "Updated connection details",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InterconnectionUpdateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/Interconnection"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete connection",
+        "description": "Delete a connection, its associated ports and virtual circuits.",
+        "operationId": "deleteInterconnection",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Connection UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "accepted",
+            "schema": {
+              "$ref": "#/definitions/Interconnection"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
+    "/connections/{connection_id}/ports": {
+      "get": {
+        "summary": "List a connection's ports",
+        "description": "List the ports associated to an connection.",
+        "operationId": "listConnectionPorts",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "connection_id",
+            "in": "path",
+            "description": "UUID of the connection",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InterconnectionPortList"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
+    "/connections/{connection_id}/ports/{id}": {
+      "get": {
+        "summary": "Get a connection port",
+        "description": "Get the details of an connection port.",
+        "operationId": "getConnectionPort",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "connection_id",
+            "in": "path",
+            "description": "UUID of the connection",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Port UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/InterconnectionPort"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
+    "/connections/{connection_id}/ports/{port_id}/virtual-circuits": {
+      "get": {
+        "summary": "List a connection port's virtual circuits",
+        "description": "List the virtual circuit record(s) associatiated with a particular connection port.",
+        "operationId": "listConnectionPortVirtualCircuits",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "connection_id",
+            "in": "path",
+            "description": "UUID of the connection",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "port_id",
+            "in": "path",
+            "description": "UUID of the connection port",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/VirtualCircuitList"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
+    "/virtual-circuits/{id}": {
+      "get": {
+        "summary": "Get a virtual circuit",
+        "description": "Get the details of a virtual circuit",
+        "operationId": "getVirtualCircuit",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Virtual Circuit UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/VirtualCircuit"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update a virtual circuit",
+        "description": "Update the details of a virtual circuit.",
+        "operationId": "updateVirtualCircuit",
+        "tags": [
+          "connections"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Virtual Circuit UUID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "virtual_circuit",
+            "in": "body",
+            "description": "Updated Virtual Circuit details",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/VirtualCircuitUpdateInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/VirtualCircuit"
+            }
+          },
+          "202": {
+            "description": "accepted",
+            "schema": {
+              "$ref": "#/definitions/VirtualCircuit"
+            }
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "404": {
+            "description": "not found"
+          }
+        }
+      }
+    },
     "/virtual-networks/{id}/internet-gateways": {
       "post": {
         "tags": [
@@ -1999,7 +2490,7 @@
         }
       }
     },
-    "/projects/{id}/invitations": {
+    "/projects/{project_id}/invitations": {
       "get": {
         "summary": "Retrieve project invitations",
         "description": "Returns all invitations in a project.",
@@ -2009,14 +2500,6 @@
           "Projects"
         ],
         "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Project ID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "name": "include",
             "in": "query",
@@ -2075,7 +2558,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "project_id",
             "in": "path",
             "description": "Project UUID",
             "required": true,
@@ -2225,7 +2708,7 @@
       "get": {
         "summary": "Retrieve current user invitations",
         "description": "Returns all invitations in current user.",
-        "operationId": "findUserInvitations",
+        "operationId": "findInvitations",
         "tags": [
           "Invitations",
           "Users"
@@ -2251,14 +2734,6 @@
             "description": "items per page, default to 10, max 1_000",
             "required": false,
             "type": "integer"
-          },
-          {
-            "name": "id",
-            "in": "path",
-            "description": "User UUID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
           }
         ],
         "responses": {
@@ -2647,10 +3122,6 @@
           "Projects",
           "IPAddresses"
         ],
-        "x-filter_tags": [
-          "Projects",
-          "IPAddresses"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -2699,7 +3170,7 @@
       "get": {
         "summary": "Retrieve all licenses",
         "description": "Provides a collection of licenses for a given project.",
-        "operationId": "findLicenses",
+        "operationId": "findProjectLicenses",
         "tags": [
           "Projects",
           "Licenses"
@@ -2719,6 +3190,20 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "page to display, default to 1, max 100_000",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "description": "items per page, default to 10, max 1_000",
+            "required": false,
+            "type": "integer"
           }
         ],
         "responses": {
@@ -2911,7 +3396,7 @@
         }
       }
     },
-    "/projects/{id}/memberships": {
+    "/projects/{project_id}/memberships": {
       "get": {
         "summary": "Retrieve project memberships",
         "description": "Returns all memberships in a project.",
@@ -2921,14 +3406,6 @@
           "Memberships"
         ],
         "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Project ID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "name": "include",
             "in": "query",
@@ -3313,7 +3790,7 @@
         }
       }
     },
-    "/devices/:instance_id/ips/:id/customdata": {
+    "/devices/{instance_id}/ips/{id}/customdata": {
       "get": {
         "summary": "Retrieve the custom metadata of an IP Assignment",
         "description": "Provides the custom metadata stored for this IP Assignment in json format",
@@ -3323,9 +3800,9 @@
         ],
         "parameters": [
           {
-            "name": "project_id",
+            "name": "instance_id",
             "in": "path",
-            "description": "Project UUID",
+            "description": "Instance UUID",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -3365,14 +3842,6 @@
         ],
         "parameters": [
           {
-            "name": "project_id",
-            "in": "path",
-            "description": "Project UUID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
-          {
             "name": "id",
             "in": "path",
             "description": "Ip Reservation UUID",
@@ -3408,7 +3877,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "HardwareReservation UUID",
+            "description": "Hardware Reservation UUID",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -3425,7 +3894,7 @@
           }
         ],
         "responses": {
-          "200": {
+          "201": {
             "description": "ok",
             "schema": {
               "$ref": "#/definitions/HardwareReservation"
@@ -3497,20 +3966,6 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "page to display, default to 1, max 100_000",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "per_page",
-            "in": "query",
-            "description": "items per page, default to 10, max 1_000",
-            "required": false,
-            "type": "integer"
           }
         ],
         "responses": {
@@ -3783,14 +4238,6 @@
             "required": true,
             "type": "string",
             "format": "uuid"
-          },
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Cage UUID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
           }
         ],
         "responses": {
@@ -3991,6 +4438,20 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "page to display, default to 1, max 100_000",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "description": "items per page, default to 10, max 1_000",
+            "required": false,
+            "type": "integer"
           }
         ],
         "responses": {
@@ -4222,20 +4683,6 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "page to display, default to 1, max 100_000",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "per_page",
-            "in": "query",
-            "description": "items per page, default to 10, max 1_000",
-            "required": false,
-            "type": "integer"
           }
         ],
         "responses": {
@@ -4281,20 +4728,6 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "page to display, default to 1, max 100_000",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "per_page",
-            "in": "query",
-            "description": "items per page, default to 10, max 1_000",
-            "required": false,
-            "type": "integer"
           }
         ],
         "responses": {
@@ -4626,12 +5059,10 @@
           },
           {
             "name": "vnid",
-            "in": "body",
+            "in": "query",
             "description": "UUID or VNID of the virtual network to assign",
             "required": true,
-            "schema": {
-              "type": "string"
-            }
+            "type": "string"
           }
         ],
         "responses": {
@@ -4841,7 +5272,7 @@
             "description": "Project to create",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/ProjectCreateInput"
+              "$ref": "#/definitions/ProjectCreateFromRootInput"
             }
           }
         ],
@@ -4980,6 +5411,50 @@
           },
           "404": {
             "description": "not found"
+          }
+        }
+      }
+    },
+    "/regions": {
+      "get": {
+        "summary": "Retrieve all regions",
+        "description": "Returns all regions.",
+        "operationId": "findRegions",
+        "tags": [
+          "Regions"
+        ],
+        "parameters": [
+          {
+            "name": "include",
+            "in": "query",
+            "description": "related attributes to include",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "page to display, default to 1, max 100_000",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "description": "items per page, default to 10, max 1_000",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "$ref": "#/definitions/RegionsList"
+            }
+          },
+          "401": {
+            "description": "unauthorized"
           }
         }
       }
@@ -5726,7 +6201,7 @@
     "/storage/{id}/snapshots": {
       "get": {
         "summary": "Retrieve all volume snapshot",
-        "description": "Returns a list of the current volume’s snapshots.",
+        "description": "Returns a list of the current volume’s snapshots. To create Volume Snapshots, please check the Volume Snapshot Policies feature.",
         "operationId": "findVolumeSnapshots",
         "tags": [
           "Volumes"
@@ -5754,38 +6229,6 @@
             "schema": {
               "$ref": "#/definitions/VolumeSnapshotList"
             }
-          },
-          "401": {
-            "description": "unauthorized"
-          },
-          "403": {
-            "description": "forbidden"
-          },
-          "404": {
-            "description": "not found"
-          }
-        }
-      },
-      "post": {
-        "summary": "Create a volume snapshot",
-        "description": "Creates a new snapshot of your volume.",
-        "operationId": "createVolumeSnapshot",
-        "tags": [
-          "Volumes"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Volume UUID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "accepted"
           },
           "401": {
             "description": "unauthorized"
@@ -6503,20 +6946,6 @@
             "description": "related attributes to include",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "description": "page to display, default to 1, max 100_000",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "per_page",
-            "in": "query",
-            "description": "items per page, default to 10, max 1_000",
-            "required": false,
-            "type": "integer"
           }
         ],
         "responses": {
@@ -8109,6 +8538,230 @@
         }
       }
     },
+    "Interconnection": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "contact_email": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "redundancy": {
+          "type": "string"
+        },
+        "speed": {
+          "type": "integer",
+          "description": "The connection's speed in bps."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ports": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InterconnectionPort"
+          }
+        },
+        "facility": {
+          "$ref": "#/definitions/Href"
+        },
+        "organization": {
+          "$ref": "#/definitions/Href"
+        }
+      }
+    },
+    "InterconnectionList": {
+      "properties": {
+        "interconnections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Interconnection"
+          }
+        }
+      }
+    },
+    "InterconnectionCreateInput": {
+      "required": [
+        "name",
+        "facility",
+        "type",
+        "redundancy"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "facility": {
+          "type": "string",
+          "description": "A Facility ID or code."
+        },
+        "type": {
+          "type": "string",
+          "description": "shared"
+        },
+        "redundancy": {
+          "type": "string",
+          "description": "primary"
+        },
+        "contact_email": {
+          "type": "string"
+        },
+        "project": {
+          "type": "string"
+        },
+        "speed": {
+          "type": "string",
+          "description": "A connection speed, in bps, mbps, or gbps. Ex: '100000000' or '100 mbps'."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "InterconnectionUpdateInput": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "contact_email": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "InterconnectionPort": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "role": {
+          "type": "string",
+          "description": "'primary'"
+        },
+        "status": {
+          "type": "string"
+        },
+        "switch_id": {
+          "type": "string",
+          "description": "A switch 'short ID'"
+        },
+        "virtual_circuits": {
+          "$ref": "#/definitions/VirtualCircuitList"
+        },
+        "organization": {
+          "$ref": "#/definitions/Href"
+        }
+      }
+    },
+    "InterconnectionPortList": {
+      "properties": {
+        "ports": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InterconnectionPort"
+          }
+        }
+      }
+    },
+    "VirtualCircuit": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "vnid": {
+          "type": "integer"
+        },
+        "nni_vnid": {
+          "type": "integer"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "project": {
+          "$ref": "#/definitions/Href"
+        },
+        "virtual_network": {
+          "$ref": "#/definitions/Href"
+        }
+      }
+    },
+    "VirtualCircuitList": {
+      "properties": {
+        "virtual_circuits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/VirtualCircuit"
+          }
+        }
+      }
+    },
+    "VirtualCircuitUpdateInput": {
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "speed": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vnid": {
+          "type": "string",
+          "description": "A Virtual Network record UUID or the VNID of a Virtual Network in your project."
+        }
+      }
+    },
     "Invitation": {
       "properties": {
         "id": {
@@ -8407,9 +9060,6 @@
         },
         "peer_ips": {
           "type": "array",
-          "items": {
-            "type": "string"
-          },
           "description": "A list of one or more IP addresses to use for the Peer IP section of your BGP configuration. For non-multihop sessions, this will typically be a single gateway address for the device. For multihop sessions, it will be a list of IPs.",
           "example": "[\"10.32.16.0\"] or [\"169.254.255.1\", \"169.254.255.2\"]"
         },
@@ -8468,6 +9118,16 @@
           "$ref": "#/definitions/Href"
         },
         "href": {
+          "type": "string"
+        },
+        "default_route": {
+          "type": "boolean"
+        }
+      }
+    },
+    "BGPSessionInput": {
+      "properties": {
+        "address_family": {
           "type": "string"
         },
         "default_route": {
@@ -9315,6 +9975,27 @@
         }
       }
     },
+    "ProjectCreateFromRootInput": {
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "organization_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "payment_method_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "customdata": {
+          "type": "string"
+        }
+      }
+    },
     "ProjectUpdateInput": {
       "properties": {
         "name": {
@@ -9342,6 +10023,30 @@
         },
         "meta": {
           "$ref": "#/definitions/Meta"
+        }
+      }
+    },
+    "Region": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "type": "string"
+        },
+        "facility": {
+          "$ref": "#/definitions/Facility"
+        }
+      }
+    },
+    "RegionsList": {
+      "properties": {
+        "regions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Region"
+          }
         }
       }
     },
