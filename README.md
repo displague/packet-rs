@@ -1,6 +1,6 @@
 # Rust API client for openapi
 
-This is the API for Packet. Interact with your devices, user account, and projects.
+This is the API for Equinix Metal Product. Interact with your devices, user account, and projects.
 
 ## Overview
 
@@ -20,7 +20,7 @@ Put the package under your project folder and add the following to `Cargo.toml` 
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -39,6 +39,18 @@ Class | Method | HTTP request | Description
 *BatchesApi* | [**find_batches_by_project**](docs/BatchesApi.md#find_batches_by_project) | **get** /projects/{id}/batches | Retrieve all batches by project
 *CapacityApi* | [**check_capacity**](docs/CapacityApi.md#check_capacity) | **post** /capacity | Check capacity
 *CapacityApi* | [**find_capacity**](docs/CapacityApi.md#find_capacity) | **get** /capacity | View capacity
+*ConnectionsApi* | [**create_organization_interconnection**](docs/ConnectionsApi.md#create_organization_interconnection) | **post** /organizations/{organization_id}/connections | Request a new connection for the organization
+*ConnectionsApi* | [**create_project_interconnection**](docs/ConnectionsApi.md#create_project_interconnection) | **post** /projects/{project_id}/connections | Request a new connection for the project's organization
+*ConnectionsApi* | [**delete_interconnection**](docs/ConnectionsApi.md#delete_interconnection) | **delete** /connections/{id} | Delete connection
+*ConnectionsApi* | [**get_connection_port**](docs/ConnectionsApi.md#get_connection_port) | **get** /connections/{connection_id}/ports/{id} | Get a connection port
+*ConnectionsApi* | [**get_interconnection**](docs/ConnectionsApi.md#get_interconnection) | **get** /connections/{id} | Get connection
+*ConnectionsApi* | [**get_virtual_circuit**](docs/ConnectionsApi.md#get_virtual_circuit) | **get** /virtual-circuits/{id} | Get a virtual circuit
+*ConnectionsApi* | [**list_connection_port_virtual_circuits**](docs/ConnectionsApi.md#list_connection_port_virtual_circuits) | **get** /connections/{connection_id}/ports/{port_id}/virtual-circuits | List a connection port's virtual circuits
+*ConnectionsApi* | [**list_connection_ports**](docs/ConnectionsApi.md#list_connection_ports) | **get** /connections/{connection_id}/ports | List a connection's ports
+*ConnectionsApi* | [**organization_list_interconnections**](docs/ConnectionsApi.md#organization_list_interconnections) | **get** /organizations/{organization_id}/connections | List organization connections
+*ConnectionsApi* | [**project_list_interconnections**](docs/ConnectionsApi.md#project_list_interconnections) | **get** /projects/{project_id}/connections | List project connections
+*ConnectionsApi* | [**update_interconnection**](docs/ConnectionsApi.md#update_interconnection) | **put** /connections/{id} | Update connection
+*ConnectionsApi* | [**update_virtual_circuit**](docs/ConnectionsApi.md#update_virtual_circuit) | **put** /virtual-circuits/{id} | Update a virtual circuit
 *DevicesApi* | [**create_bgp_session**](docs/DevicesApi.md#create_bgp_session) | **post** /devices/{id}/bgp/sessions | Create a BGP session
 *DevicesApi* | [**create_device**](docs/DevicesApi.md#create_device) | **post** /projects/{id}/devices | Create a device
 *DevicesApi* | [**create_device_batch**](docs/DevicesApi.md#create_device_batch) | **post** /projects/{id}/devices/batch | Create a devices batch
@@ -50,7 +62,7 @@ Class | Method | HTTP request | Description
 *DevicesApi* | [**find_device_events**](docs/DevicesApi.md#find_device_events) | **get** /devices/{id}/events | Retrieve device's events
 *DevicesApi* | [**find_device_usages**](docs/DevicesApi.md#find_device_usages) | **get** /devices/{id}/usages | Retrieve all usages for device
 *DevicesApi* | [**find_instance_bandwidth**](docs/DevicesApi.md#find_instance_bandwidth) | **get** /devices/{id}/bandwidth | Retrieve an instance bandwidth
-*DevicesApi* | [**find_ip_assignment_customdata**](docs/DevicesApi.md#find_ip_assignment_customdata) | **get** /devices/:instance_id/ips/:id/customdata | Retrieve the custom metadata of an IP Assignment
+*DevicesApi* | [**find_ip_assignment_customdata**](docs/DevicesApi.md#find_ip_assignment_customdata) | **get** /devices/{instance_id}/ips/{id}/customdata | Retrieve the custom metadata of an IP Assignment
 *DevicesApi* | [**find_ip_assignments**](docs/DevicesApi.md#find_ip_assignments) | **get** /devices/{id}/ips | Retrieve all ip assignments
 *DevicesApi* | [**find_organization_devices**](docs/DevicesApi.md#find_organization_devices) | **get** /organizations/{id}/devices | Retrieve all devices of an organization
 *DevicesApi* | [**find_project_devices**](docs/DevicesApi.md#find_project_devices) | **get** /projects/{id}/devices | Retrieve all devices of a project
@@ -66,13 +78,14 @@ Class | Method | HTTP request | Description
 *EventsApi* | [**find_device_events**](docs/EventsApi.md#find_device_events) | **get** /devices/{id}/events | Retrieve device's events
 *EventsApi* | [**find_event_by_id**](docs/EventsApi.md#find_event_by_id) | **get** /events/{id} | Retrieve an event
 *EventsApi* | [**find_events**](docs/EventsApi.md#find_events) | **get** /events | Retrieve current user's events
+*EventsApi* | [**find_organization_events**](docs/EventsApi.md#find_organization_events) | **get** /organizations/{id}/events | Retrieve organization's events
 *EventsApi* | [**find_project_events**](docs/EventsApi.md#find_project_events) | **get** /projects/{id}/events | Retrieve project's events
 *EventsApi* | [**find_volume_events**](docs/EventsApi.md#find_volume_events) | **get** /volumes/{id}/events | Retrieve volume's events
 *FacilitiesApi* | [**find_facilities**](docs/FacilitiesApi.md#find_facilities) | **get** /facilities | Retrieve all facilities
 *FacilitiesApi* | [**find_facilities_by_organization**](docs/FacilitiesApi.md#find_facilities_by_organization) | **get** /organizations/{id}/facilities | Retrieve all facilities visible by the organization
 *FacilitiesApi* | [**find_facilities_by_project**](docs/FacilitiesApi.md#find_facilities_by_project) | **get** /projects/{id}/facilities | Retrieve all facilities visible by the project
 *HardwareReservationsApi* | [**find_hardware_reservation_by_id**](docs/HardwareReservationsApi.md#find_hardware_reservation_by_id) | **get** /hardware-reservations/{id} | Retrieve a hardware reservation
-*HardwareReservationsApi* | [**find_hardware_reservations**](docs/HardwareReservationsApi.md#find_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
+*HardwareReservationsApi* | [**find_project_hardware_reservations**](docs/HardwareReservationsApi.md#find_project_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
 *HardwareReservationsApi* | [**hardware_reservations_id_move_post**](docs/HardwareReservationsApi.md#hardware_reservations_id_move_post) | **post** /hardware-reservations/{id}/move | Move a hardware reservation
 *IPAddressesApi* | [**create_ip_assignment**](docs/IPAddressesApi.md#create_ip_assignment) | **post** /devices/{id}/ips | Create a ip assignment
 *IPAddressesApi* | [**delete_ip_address**](docs/IPAddressesApi.md#delete_ip_address) | **delete** /ips/{id} | Unassign an ip address
@@ -86,22 +99,22 @@ Class | Method | HTTP request | Description
 *InternetGatewaysApi* | [**create_internet_gateway**](docs/InternetGatewaysApi.md#create_internet_gateway) | **post** /virtual-networks/{id}/internet-gateways | Create an internet gateway
 *InvitationsApi* | [**accept_invitation**](docs/InvitationsApi.md#accept_invitation) | **put** /invitations/{id} | Accept an invitation
 *InvitationsApi* | [**create_organization_invitation**](docs/InvitationsApi.md#create_organization_invitation) | **post** /organizations/{id}/invitations | Create an invitation for an organization
-*InvitationsApi* | [**create_project_invitation**](docs/InvitationsApi.md#create_project_invitation) | **post** /projects/{id}/invitations | Create an invitation for a project
+*InvitationsApi* | [**create_project_invitation**](docs/InvitationsApi.md#create_project_invitation) | **post** /projects/{project_id}/invitations | Create an invitation for a project
 *InvitationsApi* | [**decline_invitation**](docs/InvitationsApi.md#decline_invitation) | **delete** /invitations/{id} | Decline an invitation
 *InvitationsApi* | [**find_invitation_by_id**](docs/InvitationsApi.md#find_invitation_by_id) | **get** /invitations/{id} | View an invitation
+*InvitationsApi* | [**find_invitations**](docs/InvitationsApi.md#find_invitations) | **get** /invitations | Retrieve current user invitations
 *InvitationsApi* | [**find_organization_invitations**](docs/InvitationsApi.md#find_organization_invitations) | **get** /organizations/{id}/invitations | Retrieve organization invitations
-*InvitationsApi* | [**find_project_invitations**](docs/InvitationsApi.md#find_project_invitations) | **get** /projects/{id}/invitations | Retrieve project invitations
-*InvitationsApi* | [**find_user_invitations**](docs/InvitationsApi.md#find_user_invitations) | **get** /invitations | Retrieve current user invitations
+*InvitationsApi* | [**find_project_invitations**](docs/InvitationsApi.md#find_project_invitations) | **get** /projects/{project_id}/invitations | Retrieve project invitations
 *LicensesApi* | [**create_license**](docs/LicensesApi.md#create_license) | **post** /projects/{id}/licenses | Create a License
 *LicensesApi* | [**delete_license**](docs/LicensesApi.md#delete_license) | **delete** /licenses/{id} | Delete the license
 *LicensesApi* | [**find_license_by_id**](docs/LicensesApi.md#find_license_by_id) | **get** /licenses/{id} | Retrieve a license
-*LicensesApi* | [**find_licenses**](docs/LicensesApi.md#find_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
+*LicensesApi* | [**find_project_licenses**](docs/LicensesApi.md#find_project_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
 *LicensesApi* | [**update_license**](docs/LicensesApi.md#update_license) | **put** /licenses/{id} | Update the license
 *MarketApi* | [**find_spot_market_prices**](docs/MarketApi.md#find_spot_market_prices) | **get** /market/spot/prices | Get current spot market prices
 *MarketApi* | [**find_spot_market_prices_history**](docs/MarketApi.md#find_spot_market_prices_history) | **get** /market/spot/prices/history | Get spot market prices for a given period of time
 *MembershipsApi* | [**delete_membership**](docs/MembershipsApi.md#delete_membership) | **delete** /memberships/{id} | Delete the membership
 *MembershipsApi* | [**find_membership_by_id**](docs/MembershipsApi.md#find_membership_by_id) | **get** /memberships/{id} | Retrieve a membership
-*MembershipsApi* | [**find_project_memberships**](docs/MembershipsApi.md#find_project_memberships) | **get** /projects/{id}/memberships | Retrieve project memberships
+*MembershipsApi* | [**find_project_memberships**](docs/MembershipsApi.md#find_project_memberships) | **get** /projects/{project_id}/memberships | Retrieve project memberships
 *MembershipsApi* | [**update_membership**](docs/MembershipsApi.md#update_membership) | **put** /memberships/{id} | Update the membership
 *NotificationsApi* | [**find_notifications**](docs/NotificationsApi.md#find_notifications) | **get** /notifications | Retrieve all notifications
 *OperatingSystemVersionsApi* | [**find_operating_system_version**](docs/OperatingSystemVersionsApi.md#find_operating_system_version) | **get** /operating-system-versions | Retrieve all operating system versions
@@ -117,6 +130,7 @@ Class | Method | HTTP request | Description
 *OrganizationsApi* | [**find_organization_by_id**](docs/OrganizationsApi.md#find_organization_by_id) | **get** /organizations/{id} | Retrieve an organization's details
 *OrganizationsApi* | [**find_organization_customdata**](docs/OrganizationsApi.md#find_organization_customdata) | **get** /organizations/{id}/customdata | Retrieve the custom metadata of an organization
 *OrganizationsApi* | [**find_organization_devices**](docs/OrganizationsApi.md#find_organization_devices) | **get** /organizations/{id}/devices | Retrieve all devices of an organization
+*OrganizationsApi* | [**find_organization_events**](docs/OrganizationsApi.md#find_organization_events) | **get** /organizations/{id}/events | Retrieve organization's events
 *OrganizationsApi* | [**find_organization_invitations**](docs/OrganizationsApi.md#find_organization_invitations) | **get** /organizations/{id}/invitations | Retrieve organization invitations
 *OrganizationsApi* | [**find_organization_payment_methods**](docs/OrganizationsApi.md#find_organization_payment_methods) | **get** /organizations/{id}/payment-methods | Retrieve all payment methods of an organization
 *OrganizationsApi* | [**find_organization_projects**](docs/OrganizationsApi.md#find_organization_projects) | **get** /organizations/{id}/projects | Retrieve all projects of an organization
@@ -150,7 +164,7 @@ Class | Method | HTTP request | Description
 *ProjectsApi* | [**create_license**](docs/ProjectsApi.md#create_license) | **post** /projects/{id}/licenses | Create a License
 *ProjectsApi* | [**create_organization_project**](docs/ProjectsApi.md#create_organization_project) | **post** /organizations/{id}/projects | Create a project for the organization
 *ProjectsApi* | [**create_project**](docs/ProjectsApi.md#create_project) | **post** /projects | Create a project
-*ProjectsApi* | [**create_project_invitation**](docs/ProjectsApi.md#create_project_invitation) | **post** /projects/{id}/invitations | Create an invitation for a project
+*ProjectsApi* | [**create_project_invitation**](docs/ProjectsApi.md#create_project_invitation) | **post** /projects/{project_id}/invitations | Create an invitation for a project
 *ProjectsApi* | [**create_project_ssh_key**](docs/ProjectsApi.md#create_project_ssh_key) | **post** /projects/{id}/ssh-keys | Create a ssh key for the given project
 *ProjectsApi* | [**create_spot_market_request**](docs/ProjectsApi.md#create_spot_market_request) | **post** /projects/{id}/spot-market-requests | Create a spot market request
 *ProjectsApi* | [**create_transfer_request**](docs/ProjectsApi.md#create_transfer_request) | **post** /projects/{id}/transfers | Create a transfer request
@@ -160,10 +174,8 @@ Class | Method | HTTP request | Description
 *ProjectsApi* | [**find_bgp_config_by_project**](docs/ProjectsApi.md#find_bgp_config_by_project) | **get** /projects/{id}/bgp-config | Retrieve a bgp config
 *ProjectsApi* | [**find_device_ssh_keys**](docs/ProjectsApi.md#find_device_ssh_keys) | **get** /devices/{id}/ssh-keys | Retrieve a device's ssh keys
 *ProjectsApi* | [**find_facilities_by_project**](docs/ProjectsApi.md#find_facilities_by_project) | **get** /projects/{id}/facilities | Retrieve all facilities visible by the project
-*ProjectsApi* | [**find_hardware_reservations**](docs/ProjectsApi.md#find_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
 *ProjectsApi* | [**find_ip_reservation_customdata**](docs/ProjectsApi.md#find_ip_reservation_customdata) | **get** /projects/{project_id}/ips/{id}/customdata | Retrieve the custom metadata of an IP Reservation
 *ProjectsApi* | [**find_ip_reservations**](docs/ProjectsApi.md#find_ip_reservations) | **get** /projects/{id}/ips | Retrieve all ip reservations
-*ProjectsApi* | [**find_licenses**](docs/ProjectsApi.md#find_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
 *ProjectsApi* | [**find_organization_projects**](docs/ProjectsApi.md#find_organization_projects) | **get** /organizations/{id}/projects | Retrieve all projects of an organization
 *ProjectsApi* | [**find_plans_by_project**](docs/ProjectsApi.md#find_plans_by_project) | **get** /projects/{id}/plans | Retrieve all plans visible by the project
 *ProjectsApi* | [**find_project_bgp_sessions**](docs/ProjectsApi.md#find_project_bgp_sessions) | **get** /projects/{id}/bgp/sessions | Retrieve all BGP sessions for project
@@ -171,8 +183,10 @@ Class | Method | HTTP request | Description
 *ProjectsApi* | [**find_project_customdata**](docs/ProjectsApi.md#find_project_customdata) | **get** /projects/{id}/customdata | Retrieve the custom metadata of a project
 *ProjectsApi* | [**find_project_devices**](docs/ProjectsApi.md#find_project_devices) | **get** /projects/{id}/devices | Retrieve all devices of a project
 *ProjectsApi* | [**find_project_events**](docs/ProjectsApi.md#find_project_events) | **get** /projects/{id}/events | Retrieve project's events
-*ProjectsApi* | [**find_project_invitations**](docs/ProjectsApi.md#find_project_invitations) | **get** /projects/{id}/invitations | Retrieve project invitations
-*ProjectsApi* | [**find_project_memberships**](docs/ProjectsApi.md#find_project_memberships) | **get** /projects/{id}/memberships | Retrieve project memberships
+*ProjectsApi* | [**find_project_hardware_reservations**](docs/ProjectsApi.md#find_project_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
+*ProjectsApi* | [**find_project_invitations**](docs/ProjectsApi.md#find_project_invitations) | **get** /projects/{project_id}/invitations | Retrieve project invitations
+*ProjectsApi* | [**find_project_licenses**](docs/ProjectsApi.md#find_project_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
+*ProjectsApi* | [**find_project_memberships**](docs/ProjectsApi.md#find_project_memberships) | **get** /projects/{project_id}/memberships | Retrieve project memberships
 *ProjectsApi* | [**find_project_ssh_keys**](docs/ProjectsApi.md#find_project_ssh_keys) | **get** /projects/{id}/ssh-keys | Retrieve a project's ssh keys
 *ProjectsApi* | [**find_projects**](docs/ProjectsApi.md#find_projects) | **get** /projects | Retrieve all projects
 *ProjectsApi* | [**find_virtual_networks**](docs/ProjectsApi.md#find_virtual_networks) | **get** /projects/{id}/virtual-networks | Retrieve all virtual networks
@@ -180,6 +194,7 @@ Class | Method | HTTP request | Description
 *ProjectsApi* | [**request_bgp_config**](docs/ProjectsApi.md#request_bgp_config) | **post** /projects/{id}/bgp-configs | Requesting bgp config
 *ProjectsApi* | [**request_ip_reservation**](docs/ProjectsApi.md#request_ip_reservation) | **post** /projects/{id}/ips | Requesting IP reservations
 *ProjectsApi* | [**update_project**](docs/ProjectsApi.md#update_project) | **put** /projects/{id} | Update the project
+*RegionsApi* | [**find_regions**](docs/RegionsApi.md#find_regions) | **get** /regions | Retrieve all regions
 *SSHKeysApi* | [**create_project_ssh_key**](docs/SSHKeysApi.md#create_project_ssh_key) | **post** /projects/{id}/ssh-keys | Create a ssh key for the given project
 *SSHKeysApi* | [**create_ssh_key**](docs/SSHKeysApi.md#create_ssh_key) | **post** /ssh-keys | Create a ssh key for the current user
 *SSHKeysApi* | [**delete_ssh_key**](docs/SSHKeysApi.md#delete_ssh_key) | **delete** /ssh-keys/{id} | Delete the ssh key
@@ -207,9 +222,9 @@ Class | Method | HTTP request | Description
 *UserVerificationTokensApi* | [**create_validation_request**](docs/UserVerificationTokensApi.md#create_validation_request) | **post** /verify-email | Create an email verification request
 *UserdataApi* | [**validate_userdata**](docs/UserdataApi.md#validate_userdata) | **post** /userdata/validate | Validate user data
 *UsersApi* | [**find_current_user**](docs/UsersApi.md#find_current_user) | **get** /user | Retrieve the current user
+*UsersApi* | [**find_invitations**](docs/UsersApi.md#find_invitations) | **get** /invitations | Retrieve current user invitations
 *UsersApi* | [**find_user_by_id**](docs/UsersApi.md#find_user_by_id) | **get** /users/{id} | Retrieve a user
 *UsersApi* | [**find_user_customdata**](docs/UsersApi.md#find_user_customdata) | **get** /users/{id}/customdata | Retrieve the custom metadata of a user
-*UsersApi* | [**find_user_invitations**](docs/UsersApi.md#find_user_invitations) | **get** /invitations | Retrieve current user invitations
 *UsersApi* | [**find_users**](docs/UsersApi.md#find_users) | **get** /users | Retrieve all users
 *UsersApi* | [**update_current_user**](docs/UsersApi.md#update_current_user) | **put** /user | Update the current user
 *VLANsApi* | [**assign_native_vlan**](docs/VLANsApi.md#assign_native_vlan) | **post** /ports/{id}/native-vlan | Assign a native VLAN
@@ -225,7 +240,6 @@ Class | Method | HTTP request | Description
 *VolumesApi* | [**clone_volume**](docs/VolumesApi.md#clone_volume) | **post** /storage/{id}/clone | Clone volume/snapshot
 *VolumesApi* | [**create_volume**](docs/VolumesApi.md#create_volume) | **post** /projects/{id}/storage | Create a volume
 *VolumesApi* | [**create_volume_attachment**](docs/VolumesApi.md#create_volume_attachment) | **post** /storage/{id}/attachments | Attach your volume
-*VolumesApi* | [**create_volume_snapshot**](docs/VolumesApi.md#create_volume_snapshot) | **post** /storage/{id}/snapshots | Create a volume snapshot
 *VolumesApi* | [**create_volume_snapshot_policy**](docs/VolumesApi.md#create_volume_snapshot_policy) | **post** /storage/{id}/snapshot-policies | Create a volume snapshot policy
 *VolumesApi* | [**delete_volume**](docs/VolumesApi.md#delete_volume) | **delete** /storage/{id} | Delete the volume
 *VolumesApi* | [**delete_volume_attachment**](docs/VolumesApi.md#delete_volume_attachment) | **delete** /storage/attachments/{id} | Detach volume
@@ -254,6 +268,7 @@ Class | Method | HTTP request | Description
  - [BgpNeighborDataRoutesIn](docs/BgpNeighborDataRoutesIn.md)
  - [BgpNeighborDataRoutesOut](docs/BgpNeighborDataRoutesOut.md)
  - [BgpSession](docs/BgpSession.md)
+ - [BgpSessionInput](docs/BgpSessionInput.md)
  - [BgpSessionList](docs/BgpSessionList.md)
  - [BgpSessionNeighbors](docs/BgpSessionNeighbors.md)
  - [CapacityInput](docs/CapacityInput.md)
@@ -291,6 +306,12 @@ Class | Method | HTTP request | Description
  - [InstancesBatchCreateInput](docs/InstancesBatchCreateInput.md)
  - [InstancesBatchCreateInputBatches](docs/InstancesBatchCreateInputBatches.md)
  - [InstancesBatchCreateInputIpAddresses](docs/InstancesBatchCreateInputIpAddresses.md)
+ - [Interconnection](docs/Interconnection.md)
+ - [InterconnectionCreateInput](docs/InterconnectionCreateInput.md)
+ - [InterconnectionList](docs/InterconnectionList.md)
+ - [InterconnectionPort](docs/InterconnectionPort.md)
+ - [InterconnectionPortList](docs/InterconnectionPortList.md)
+ - [InterconnectionUpdateInput](docs/InterconnectionUpdateInput.md)
  - [InternetGateway](docs/InternetGateway.md)
  - [Invitation](docs/Invitation.md)
  - [InvitationInput](docs/InvitationInput.md)
@@ -332,12 +353,15 @@ Class | Method | HTTP request | Description
  - [PortConvertLayer3Input](docs/PortConvertLayer3Input.md)
  - [PortConvertLayer3InputRequestIps](docs/PortConvertLayer3InputRequestIps.md)
  - [Project](docs/Project.md)
+ - [ProjectCreateFromRootInput](docs/ProjectCreateFromRootInput.md)
  - [ProjectCreateInput](docs/ProjectCreateInput.md)
  - [ProjectList](docs/ProjectList.md)
  - [ProjectUpdateInput](docs/ProjectUpdateInput.md)
  - [ProjectUsage](docs/ProjectUsage.md)
  - [ProjectUsageList](docs/ProjectUsageList.md)
  - [RecoveryCodeList](docs/RecoveryCodeList.md)
+ - [Region](docs/Region.md)
+ - [RegionsList](docs/RegionsList.md)
  - [ServerInfo](docs/ServerInfo.md)
  - [ServerUnavailableInfo](docs/ServerUnavailableInfo.md)
  - [SnapshotPolicy](docs/SnapshotPolicy.md)
@@ -369,6 +393,9 @@ Class | Method | HTTP request | Description
  - [UserList](docs/UserList.md)
  - [UserUpdateInput](docs/UserUpdateInput.md)
  - [Userdata](docs/Userdata.md)
+ - [VirtualCircuit](docs/VirtualCircuit.md)
+ - [VirtualCircuitList](docs/VirtualCircuitList.md)
+ - [VirtualCircuitUpdateInput](docs/VirtualCircuitUpdateInput.md)
  - [VirtualNetwork](docs/VirtualNetwork.md)
  - [VirtualNetworkCreateInput](docs/VirtualNetworkCreateInput.md)
  - [VirtualNetworkList](docs/VirtualNetworkList.md)
@@ -393,5 +420,5 @@ cargo doc --open
 
 ## Author
 
-support@packet.com
+support@equinixmetal.com
 

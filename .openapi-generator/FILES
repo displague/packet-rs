@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 Cargo.toml
 README.md
@@ -14,6 +13,7 @@ docs/BgpNeighborData.md
 docs/BgpNeighborDataRoutesIn.md
 docs/BgpNeighborDataRoutesOut.md
 docs/BgpSession.md
+docs/BgpSessionInput.md
 docs/BgpSessionList.md
 docs/BgpSessionNeighbors.md
 docs/CapacityApi.md
@@ -25,6 +25,7 @@ docs/CapacityPerFacility.md
 docs/CapacityPerNewFacility.md
 docs/CapacityReport.md
 docs/CapacityServerUnavailable.md
+docs/ConnectionsApi.md
 docs/Coordinates.md
 docs/CreateEmailInput.md
 docs/Device.md
@@ -59,6 +60,12 @@ docs/IncidentsApi.md
 docs/InstancesBatchCreateInput.md
 docs/InstancesBatchCreateInputBatches.md
 docs/InstancesBatchCreateInputIpAddresses.md
+docs/Interconnection.md
+docs/InterconnectionCreateInput.md
+docs/InterconnectionList.md
+docs/InterconnectionPort.md
+docs/InterconnectionPortList.md
+docs/InterconnectionUpdateInput.md
 docs/InternetGateway.md
 docs/InternetGatewaysApi.md
 docs/Invitation.md
@@ -114,6 +121,7 @@ docs/PortConvertLayer3Input.md
 docs/PortConvertLayer3InputRequestIps.md
 docs/PortsApi.md
 docs/Project.md
+docs/ProjectCreateFromRootInput.md
 docs/ProjectCreateInput.md
 docs/ProjectList.md
 docs/ProjectUpdateInput.md
@@ -121,6 +129,9 @@ docs/ProjectUsage.md
 docs/ProjectUsageList.md
 docs/ProjectsApi.md
 docs/RecoveryCodeList.md
+docs/Region.md
+docs/RegionsApi.md
+docs/RegionsList.md
 docs/SSHKeysApi.md
 docs/ServerInfo.md
 docs/ServerUnavailableInfo.md
@@ -162,6 +173,9 @@ docs/UserdataApi.md
 docs/UsersApi.md
 docs/VLANsApi.md
 docs/VPNApi.md
+docs/VirtualCircuit.md
+docs/VirtualCircuitList.md
+docs/VirtualCircuitUpdateInput.md
 docs/VirtualNetwork.md
 docs/VirtualNetworkCreateInput.md
 docs/VirtualNetworkList.md
@@ -182,6 +196,7 @@ src/apis/batches_api.rs
 src/apis/bgp_api.rs
 src/apis/capacity_api.rs
 src/apis/configuration.rs
+src/apis/connections_api.rs
 src/apis/devices_api.rs
 src/apis/emails_api.rs
 src/apis/events_api.rs
@@ -205,6 +220,7 @@ src/apis/payment_methods_api.rs
 src/apis/plans_api.rs
 src/apis/ports_api.rs
 src/apis/projects_api.rs
+src/apis/regions_api.rs
 src/apis/spot_market_request_api.rs
 src/apis/ssh_keys_api.rs
 src/apis/transfer_requests_api.rs
@@ -226,6 +242,7 @@ src/models/bgp_neighbor_data.rs
 src/models/bgp_neighbor_data_routes_in.rs
 src/models/bgp_neighbor_data_routes_out.rs
 src/models/bgp_session.rs
+src/models/bgp_session_input.rs
 src/models/bgp_session_list.rs
 src/models/bgp_session_neighbors.rs
 src/models/capacity_input.rs
@@ -263,6 +280,12 @@ src/models/href.rs
 src/models/instances_batch_create_input.rs
 src/models/instances_batch_create_input_batches.rs
 src/models/instances_batch_create_input_ip_addresses.rs
+src/models/interconnection.rs
+src/models/interconnection_create_input.rs
+src/models/interconnection_list.rs
+src/models/interconnection_port.rs
+src/models/interconnection_port_list.rs
+src/models/interconnection_update_input.rs
 src/models/internet_gateway.rs
 src/models/invitation.rs
 src/models/invitation_input.rs
@@ -305,12 +328,15 @@ src/models/port_assign_input.rs
 src/models/port_convert_layer3_input.rs
 src/models/port_convert_layer3_input_request_ips.rs
 src/models/project.rs
+src/models/project_create_from_root_input.rs
 src/models/project_create_input.rs
 src/models/project_list.rs
 src/models/project_update_input.rs
 src/models/project_usage.rs
 src/models/project_usage_list.rs
 src/models/recovery_code_list.rs
+src/models/region.rs
+src/models/regions_list.rs
 src/models/server_info.rs
 src/models/server_unavailable_info.rs
 src/models/snapshot_policy.rs
@@ -342,6 +368,9 @@ src/models/user_create_input.rs
 src/models/user_list.rs
 src/models/user_update_input.rs
 src/models/userdata.rs
+src/models/virtual_circuit.rs
+src/models/virtual_circuit_list.rs
+src/models/virtual_circuit_update_input.rs
 src/models/virtual_network.rs
 src/models/virtual_network_create_input.rs
 src/models/virtual_network_list.rs
