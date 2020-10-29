@@ -1,6 +1,6 @@
 # \PaymentMethodsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -75,7 +75,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_organization_payment_methods
 
-> crate::models::PaymentMethodList find_organization_payment_methods(id, include)
+> crate::models::PaymentMethodList find_organization_payment_methods(id, include, page, per_page)
 Retrieve all payment methods of an organization
 
 Returns all payment methods of an organization.
@@ -87,6 +87,8 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 

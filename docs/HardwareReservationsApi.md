@@ -1,11 +1,11 @@
 # \HardwareReservationsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**find_hardware_reservation_by_id**](HardwareReservationsApi.md#find_hardware_reservation_by_id) | **get** /hardware-reservations/{id} | Retrieve a hardware reservation
-[**find_hardware_reservations**](HardwareReservationsApi.md#find_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
+[**find_project_hardware_reservations**](HardwareReservationsApi.md#find_project_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
 [**hardware_reservations_id_move_post**](HardwareReservationsApi.md#hardware_reservations_id_move_post) | **post** /hardware-reservations/{id}/move | Move a hardware reservation
 
 
@@ -41,9 +41,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## find_hardware_reservations
+## find_project_hardware_reservations
 
-> crate::models::HardwareReservationList find_hardware_reservations(id, include, page, per_page)
+> crate::models::HardwareReservationList find_project_hardware_reservations(id, include, page, per_page)
 Retrieve all hardware reservations for a given project
 
 Provides a collection of hardware reservations for a given project.
@@ -86,7 +86,7 @@ Move a hardware reservation to another project
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | HardwareReservation UUID | [required] |
+**id** | [**String**](.md) | Hardware Reservation UUID | [required] |
 **project_id** | **String** | Project UUID | [required] |
 
 ### Return type

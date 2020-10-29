@@ -1,13 +1,12 @@
 # \VolumesApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**clone_volume**](VolumesApi.md#clone_volume) | **post** /storage/{id}/clone | Clone volume/snapshot
 [**create_volume**](VolumesApi.md#create_volume) | **post** /projects/{id}/storage | Create a volume
 [**create_volume_attachment**](VolumesApi.md#create_volume_attachment) | **post** /storage/{id}/attachments | Attach your volume
-[**create_volume_snapshot**](VolumesApi.md#create_volume_snapshot) | **post** /storage/{id}/snapshots | Create a volume snapshot
 [**create_volume_snapshot_policy**](VolumesApi.md#create_volume_snapshot_policy) | **post** /storage/{id}/snapshot-policies | Create a volume snapshot policy
 [**delete_volume**](VolumesApi.md#delete_volume) | **delete** /storage/{id} | Delete the volume
 [**delete_volume_attachment**](VolumesApi.md#delete_volume_attachment) | **delete** /storage/attachments/{id} | Detach volume
@@ -115,36 +114,6 @@ Name | Type | Description  | Required | Notes
 
 - **Content-Type**: application/json
 - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## create_volume_snapshot
-
-> create_volume_snapshot(id)
-Create a volume snapshot
-
-Creates a new snapshot of your volume.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Volume UUID | [required] |
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-[x_auth_token](../README.md#x_auth_token)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -463,7 +432,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::VolumeSnapshotList find_volume_snapshots(id, include)
 Retrieve all volume snapshot
 
-Returns a list of the current volume’s snapshots.
+Returns a list of the current volume’s snapshots. To create Volume Snapshots, please check the Volume Snapshot Policies feature.
 
 ### Parameters
 

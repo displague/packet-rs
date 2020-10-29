@@ -1,6 +1,6 @@
 # \OrganizationsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,6 +14,7 @@ Method | HTTP request | Description
 [**find_organization_by_id**](OrganizationsApi.md#find_organization_by_id) | **get** /organizations/{id} | Retrieve an organization's details
 [**find_organization_customdata**](OrganizationsApi.md#find_organization_customdata) | **get** /organizations/{id}/customdata | Retrieve the custom metadata of an organization
 [**find_organization_devices**](OrganizationsApi.md#find_organization_devices) | **get** /organizations/{id}/devices | Retrieve all devices of an organization
+[**find_organization_events**](OrganizationsApi.md#find_organization_events) | **get** /organizations/{id}/events | Retrieve organization's events
 [**find_organization_invitations**](OrganizationsApi.md#find_organization_invitations) | **get** /organizations/{id}/invitations | Retrieve organization invitations
 [**find_organization_payment_methods**](OrganizationsApi.md#find_organization_payment_methods) | **get** /organizations/{id}/payment-methods | Retrieve all payment methods of an organization
 [**find_organization_projects**](OrganizationsApi.md#find_organization_projects) | **get** /organizations/{id}/projects | Retrieve all projects of an organization
@@ -149,7 +150,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_organization
 
-> delete_organization(id, id2)
+> delete_organization(id)
 Delete the organization
 
 Deletes the organization.
@@ -160,7 +161,6 @@ Deletes the organization.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
-**id2** | [**String**](.md) | Cage UUID | [required] |
 
 ### Return type
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_facilities_by_organization
 
-> crate::models::FacilityList find_facilities_by_organization(id, include, page, per_page)
+> crate::models::FacilityList find_facilities_by_organization(id, include)
 Retrieve all facilities visible by the organization
 
 Returns a listing of available datacenters for the given organization
@@ -192,8 +192,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
@@ -213,7 +211,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_operating_systems_by_organization
 
-> Vec<crate::models::OperatingSystem> find_operating_systems_by_organization(id, include, page, per_page)
+> Vec<crate::models::OperatingSystem> find_operating_systems_by_organization(id, include)
 Retrieve all operating systems visible by the organization
 
 Returns a listing of available operating systems for the given organization
@@ -225,8 +223,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
@@ -338,6 +334,39 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## find_organization_events
+
+> crate::models::EventList find_organization_events(id, include, page, per_page)
+Retrieve organization's events
+
+Returns a list of events for a single organization
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**id** | [**String**](.md) | Organization UUID | [required] |
+**include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
+
+### Return type
+
+[**crate::models::EventList**](EventList.md)
+
+### Authorization
+
+[x_auth_token](../README.md#x_auth_token)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## find_organization_invitations
 
 > crate::models::InvitationList find_organization_invitations(id, include, page, per_page)
@@ -373,7 +402,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_organization_payment_methods
 
-> crate::models::PaymentMethodList find_organization_payment_methods(id, include)
+> crate::models::PaymentMethodList find_organization_payment_methods(id, include, page, per_page)
 Retrieve all payment methods of an organization
 
 Returns all payment methods of an organization.
@@ -385,6 +414,8 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
@@ -437,7 +468,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_organization_transfers
 
-> crate::models::TransferRequestList find_organization_transfers(id, include, page, per_page)
+> crate::models::TransferRequestList find_organization_transfers(id, include)
 Retrieve all project transfer requests from or to an organization
 
 Provides a collection of project transfer requests from or to the organization.
@@ -449,8 +480,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
@@ -504,7 +533,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_plans_by_organization
 
-> crate::models::PlanList find_plans_by_organization(id, include, page, per_page)
+> crate::models::PlanList find_plans_by_organization(id, include)
 Retrieve all plans visible by the organization
 
 Returns a listing of available plans for the given organization
@@ -516,8 +545,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 

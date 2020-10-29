@@ -1,6 +1,6 @@
 # \OperatingSystemsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ## find_operating_systems_by_organization
 
-> Vec<crate::models::OperatingSystem> find_operating_systems_by_organization(id, include, page, per_page)
+> Vec<crate::models::OperatingSystem> find_operating_systems_by_organization(id, include)
 Retrieve all operating systems visible by the organization
 
 Returns a listing of available operating systems for the given organization
@@ -50,8 +50,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 

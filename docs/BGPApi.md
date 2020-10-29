@@ -1,6 +1,6 @@
 # \BGPApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 ## create_bgp_session
 
-> crate::models::BgpSession create_bgp_session(id, default_route)
+> crate::models::BgpSession create_bgp_session(id, bgp_session)
 Create a BGP session
 
 Creates a BGP session.
@@ -29,7 +29,7 @@ Creates a BGP session.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Device UUID | [required] |
-**default_route** | Option<**bool**> | Default route |  |
+**bgp_session** | [**BgpSessionInput**](BgpSessionInput.md) | BGP session to create | [required] |
 
 ### Return type
 

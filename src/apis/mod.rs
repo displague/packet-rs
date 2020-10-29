@@ -41,6 +41,7 @@ pub fn urlencode<T: AsRef<str>>(s: T) -> String {
 pub mod bgp_api;
 pub mod batches_api;
 pub mod capacity_api;
+pub mod connections_api;
 pub mod devices_api;
 pub mod emails_api;
 pub mod events_api;
@@ -63,6 +64,7 @@ pub mod payment_methods_api;
 pub mod plans_api;
 pub mod ports_api;
 pub mod projects_api;
+pub mod regions_api;
 pub mod ssh_keys_api;
 pub mod spot_market_request_api;
 pub mod transfer_requests_api;

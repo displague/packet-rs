@@ -1,6 +1,6 @@
 # \DevicesApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**find_device_events**](DevicesApi.md#find_device_events) | **get** /devices/{id}/events | Retrieve device's events
 [**find_device_usages**](DevicesApi.md#find_device_usages) | **get** /devices/{id}/usages | Retrieve all usages for device
 [**find_instance_bandwidth**](DevicesApi.md#find_instance_bandwidth) | **get** /devices/{id}/bandwidth | Retrieve an instance bandwidth
-[**find_ip_assignment_customdata**](DevicesApi.md#find_ip_assignment_customdata) | **get** /devices/:instance_id/ips/:id/customdata | Retrieve the custom metadata of an IP Assignment
+[**find_ip_assignment_customdata**](DevicesApi.md#find_ip_assignment_customdata) | **get** /devices/{instance_id}/ips/{id}/customdata | Retrieve the custom metadata of an IP Assignment
 [**find_ip_assignments**](DevicesApi.md#find_ip_assignments) | **get** /devices/{id}/ips | Retrieve all ip assignments
 [**find_organization_devices**](DevicesApi.md#find_organization_devices) | **get** /organizations/{id}/devices | Retrieve all devices of an organization
 [**find_project_devices**](DevicesApi.md#find_project_devices) | **get** /projects/{id}/devices | Retrieve all devices of a project
@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 ## create_bgp_session
 
-> crate::models::BgpSession create_bgp_session(id, default_route)
+> crate::models::BgpSession create_bgp_session(id, bgp_session)
 Create a BGP session
 
 Creates a BGP session.
@@ -40,7 +40,7 @@ Creates a BGP session.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Device UUID | [required] |
-**default_route** | Option<**bool**> | Default route |  |
+**bgp_session** | [**BgpSessionInput**](BgpSessionInput.md) | BGP session to create | [required] |
 
 ### Return type
 
@@ -372,7 +372,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_ip_assignment_customdata
 
-> find_ip_assignment_customdata(project_id, id)
+> find_ip_assignment_customdata(instance_id, id)
 Retrieve the custom metadata of an IP Assignment
 
 Provides the custom metadata stored for this IP Assignment in json format
@@ -382,7 +382,7 @@ Provides the custom metadata stored for this IP Assignment in json format
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**project_id** | [**String**](.md) | Project UUID | [required] |
+**instance_id** | [**String**](.md) | Instance UUID | [required] |
 **id** | [**String**](.md) | Ip Assignment UUID | [required] |
 
 ### Return type

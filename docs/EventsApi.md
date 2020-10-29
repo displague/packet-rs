@@ -1,12 +1,13 @@
 # \EventsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**find_device_events**](EventsApi.md#find_device_events) | **get** /devices/{id}/events | Retrieve device's events
 [**find_event_by_id**](EventsApi.md#find_event_by_id) | **get** /events/{id} | Retrieve an event
 [**find_events**](EventsApi.md#find_events) | **get** /events | Retrieve current user's events
+[**find_organization_events**](EventsApi.md#find_organization_events) | **get** /organizations/{id}/events | Retrieve organization's events
 [**find_project_events**](EventsApi.md#find_project_events) | **get** /projects/{id}/events | Retrieve project's events
 [**find_volume_events**](EventsApi.md#find_volume_events) | **get** /volumes/{id}/events | Retrieve volume's events
 
@@ -88,6 +89,39 @@ Returns a list of the current user’s events
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
+
+### Return type
+
+[**crate::models::EventList**](EventList.md)
+
+### Authorization
+
+[x_auth_token](../README.md#x_auth_token)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## find_organization_events
+
+> crate::models::EventList find_organization_events(id, include, page, per_page)
+Retrieve organization's events
+
+Returns a list of events for a single organization
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
 **page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
 **per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |

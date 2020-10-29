@@ -1,17 +1,17 @@
 # \InvitationsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**accept_invitation**](InvitationsApi.md#accept_invitation) | **put** /invitations/{id} | Accept an invitation
 [**create_organization_invitation**](InvitationsApi.md#create_organization_invitation) | **post** /organizations/{id}/invitations | Create an invitation for an organization
-[**create_project_invitation**](InvitationsApi.md#create_project_invitation) | **post** /projects/{id}/invitations | Create an invitation for a project
+[**create_project_invitation**](InvitationsApi.md#create_project_invitation) | **post** /projects/{project_id}/invitations | Create an invitation for a project
 [**decline_invitation**](InvitationsApi.md#decline_invitation) | **delete** /invitations/{id} | Decline an invitation
 [**find_invitation_by_id**](InvitationsApi.md#find_invitation_by_id) | **get** /invitations/{id} | View an invitation
+[**find_invitations**](InvitationsApi.md#find_invitations) | **get** /invitations | Retrieve current user invitations
 [**find_organization_invitations**](InvitationsApi.md#find_organization_invitations) | **get** /organizations/{id}/invitations | Retrieve organization invitations
-[**find_project_invitations**](InvitationsApi.md#find_project_invitations) | **get** /projects/{id}/invitations | Retrieve project invitations
-[**find_user_invitations**](InvitationsApi.md#find_user_invitations) | **get** /invitations | Retrieve current user invitations
+[**find_project_invitations**](InvitationsApi.md#find_project_invitations) | **get** /projects/{project_id}/invitations | Retrieve project invitations
 
 
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_project_invitation
 
-> crate::models::Invitation create_project_invitation(id, invitation)
+> crate::models::Invitation create_project_invitation(project_id, invitation)
 Create an invitation for a project
 
 In order to add a user to a project, they must first be invited.
@@ -88,7 +88,7 @@ In order to add a user to a project, they must first be invited.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project UUID | [required] |
+**project_id** | [**String**](.md) | Project UUID | [required] |
 **invitation** | [**InvitationInput**](InvitationInput.md) | Invitation to create | [required] |
 
 ### Return type
@@ -168,6 +168,38 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## find_invitations
+
+> crate::models::InvitationList find_invitations(include, page, per_page)
+Retrieve current user invitations
+
+Returns all invitations in current user.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
+
+### Return type
+
+[**crate::models::InvitationList**](InvitationList.md)
+
+### Authorization
+
+[x_auth_token](../README.md#x_auth_token)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## find_organization_invitations
 
 > crate::models::InvitationList find_organization_invitations(id, include, page, per_page)
@@ -203,7 +235,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_project_invitations
 
-> crate::models::InvitationList find_project_invitations(id, project_id, include, page, per_page)
+> crate::models::InvitationList find_project_invitations(project_id, include, page, per_page)
 Retrieve project invitations
 
 Returns all invitations in a project.
@@ -213,41 +245,7 @@ Returns all invitations in a project.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project ID | [required] |
 **project_id** | [**String**](.md) | Project UUID | [required] |
-**include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
-
-### Return type
-
-[**crate::models::InvitationList**](InvitationList.md)
-
-### Authorization
-
-[x_auth_token](../README.md#x_auth_token)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## find_user_invitations
-
-> crate::models::InvitationList find_user_invitations(id, include, page, per_page)
-Retrieve current user invitations
-
-Returns all invitations in current user.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | User UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
 **page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
 **per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |

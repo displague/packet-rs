@@ -1,6 +1,6 @@
 # \IPAddressesApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -109,7 +109,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_ip_address_customdata
 
-> find_ip_address_customdata(project_id, id)
+> find_ip_address_customdata(id)
 Retrieve the custom metadata of an IP Reservation or IP Assignment
 
 Provides the custom metadata stored for this IP Reservation or IP Assignment in json format
@@ -119,7 +119,6 @@ Provides the custom metadata stored for this IP Reservation or IP Assignment in 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**project_id** | [**String**](.md) | Project UUID | [required] |
 **id** | [**String**](.md) | Ip Reservation UUID | [required] |
 
 ### Return type

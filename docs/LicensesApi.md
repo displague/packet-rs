@@ -1,13 +1,13 @@
 # \LicensesApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_license**](LicensesApi.md#create_license) | **post** /projects/{id}/licenses | Create a License
 [**delete_license**](LicensesApi.md#delete_license) | **delete** /licenses/{id} | Delete the license
 [**find_license_by_id**](LicensesApi.md#find_license_by_id) | **get** /licenses/{id} | Retrieve a license
-[**find_licenses**](LicensesApi.md#find_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
+[**find_project_licenses**](LicensesApi.md#find_project_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
 [**update_license**](LicensesApi.md#update_license) | **put** /licenses/{id} | Update the license
 
 
@@ -104,9 +104,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## find_licenses
+## find_project_licenses
 
-> crate::models::LicenseList find_licenses(id, include)
+> crate::models::LicenseList find_project_licenses(id, include, page, per_page)
 Retrieve all licenses
 
 Provides a collection of licenses for a given project.
@@ -118,6 +118,8 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Project UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 

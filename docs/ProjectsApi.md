@@ -1,6 +1,6 @@
 # \ProjectsApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**create_license**](ProjectsApi.md#create_license) | **post** /projects/{id}/licenses | Create a License
 [**create_organization_project**](ProjectsApi.md#create_organization_project) | **post** /organizations/{id}/projects | Create a project for the organization
 [**create_project**](ProjectsApi.md#create_project) | **post** /projects | Create a project
-[**create_project_invitation**](ProjectsApi.md#create_project_invitation) | **post** /projects/{id}/invitations | Create an invitation for a project
+[**create_project_invitation**](ProjectsApi.md#create_project_invitation) | **post** /projects/{project_id}/invitations | Create an invitation for a project
 [**create_project_ssh_key**](ProjectsApi.md#create_project_ssh_key) | **post** /projects/{id}/ssh-keys | Create a ssh key for the given project
 [**create_spot_market_request**](ProjectsApi.md#create_spot_market_request) | **post** /projects/{id}/spot-market-requests | Create a spot market request
 [**create_transfer_request**](ProjectsApi.md#create_transfer_request) | **post** /projects/{id}/transfers | Create a transfer request
@@ -18,10 +18,8 @@ Method | HTTP request | Description
 [**find_bgp_config_by_project**](ProjectsApi.md#find_bgp_config_by_project) | **get** /projects/{id}/bgp-config | Retrieve a bgp config
 [**find_device_ssh_keys**](ProjectsApi.md#find_device_ssh_keys) | **get** /devices/{id}/ssh-keys | Retrieve a device's ssh keys
 [**find_facilities_by_project**](ProjectsApi.md#find_facilities_by_project) | **get** /projects/{id}/facilities | Retrieve all facilities visible by the project
-[**find_hardware_reservations**](ProjectsApi.md#find_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
 [**find_ip_reservation_customdata**](ProjectsApi.md#find_ip_reservation_customdata) | **get** /projects/{project_id}/ips/{id}/customdata | Retrieve the custom metadata of an IP Reservation
 [**find_ip_reservations**](ProjectsApi.md#find_ip_reservations) | **get** /projects/{id}/ips | Retrieve all ip reservations
-[**find_licenses**](ProjectsApi.md#find_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
 [**find_organization_projects**](ProjectsApi.md#find_organization_projects) | **get** /organizations/{id}/projects | Retrieve all projects of an organization
 [**find_plans_by_project**](ProjectsApi.md#find_plans_by_project) | **get** /projects/{id}/plans | Retrieve all plans visible by the project
 [**find_project_bgp_sessions**](ProjectsApi.md#find_project_bgp_sessions) | **get** /projects/{id}/bgp/sessions | Retrieve all BGP sessions for project
@@ -29,8 +27,10 @@ Method | HTTP request | Description
 [**find_project_customdata**](ProjectsApi.md#find_project_customdata) | **get** /projects/{id}/customdata | Retrieve the custom metadata of a project
 [**find_project_devices**](ProjectsApi.md#find_project_devices) | **get** /projects/{id}/devices | Retrieve all devices of a project
 [**find_project_events**](ProjectsApi.md#find_project_events) | **get** /projects/{id}/events | Retrieve project's events
-[**find_project_invitations**](ProjectsApi.md#find_project_invitations) | **get** /projects/{id}/invitations | Retrieve project invitations
-[**find_project_memberships**](ProjectsApi.md#find_project_memberships) | **get** /projects/{id}/memberships | Retrieve project memberships
+[**find_project_hardware_reservations**](ProjectsApi.md#find_project_hardware_reservations) | **get** /projects/{id}/hardware-reservations | Retrieve all hardware reservations for a given project
+[**find_project_invitations**](ProjectsApi.md#find_project_invitations) | **get** /projects/{project_id}/invitations | Retrieve project invitations
+[**find_project_licenses**](ProjectsApi.md#find_project_licenses) | **get** /projects/{id}/licenses | Retrieve all licenses
+[**find_project_memberships**](ProjectsApi.md#find_project_memberships) | **get** /projects/{project_id}/memberships | Retrieve project memberships
 [**find_project_ssh_keys**](ProjectsApi.md#find_project_ssh_keys) | **get** /projects/{id}/ssh-keys | Retrieve a project's ssh keys
 [**find_projects**](ProjectsApi.md#find_projects) | **get** /projects | Retrieve all projects
 [**find_virtual_networks**](ProjectsApi.md#find_virtual_networks) | **get** /projects/{id}/virtual-networks | Retrieve all virtual networks
@@ -146,7 +146,7 @@ Creates a new project for the user default organization. If the user don't have 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**project** | [**ProjectCreateInput**](ProjectCreateInput.md) | Project to create | [required] |
+**project** | [**ProjectCreateFromRootInput**](ProjectCreateFromRootInput.md) | Project to create | [required] |
 
 ### Return type
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_project_invitation
 
-> crate::models::Invitation create_project_invitation(id, invitation)
+> crate::models::Invitation create_project_invitation(project_id, invitation)
 Create an invitation for a project
 
 In order to add a user to a project, they must first be invited.
@@ -176,7 +176,7 @@ In order to add a user to a project, they must first be invited.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project UUID | [required] |
+**project_id** | [**String**](.md) | Project UUID | [required] |
 **invitation** | [**InvitationInput**](InvitationInput.md) | Invitation to create | [required] |
 
 ### Return type
@@ -445,7 +445,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_facilities_by_project
 
-> crate::models::FacilityList find_facilities_by_project(id, include, page, per_page)
+> crate::models::FacilityList find_facilities_by_project(id, include)
 Retrieve all facilities visible by the project
 
 Returns a listing of available datacenters for the given project
@@ -457,45 +457,10 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Project UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
 [**crate::models::FacilityList**](FacilityList.md)
-
-### Authorization
-
-[x_auth_token](../README.md#x_auth_token)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## find_hardware_reservations
-
-> crate::models::HardwareReservationList find_hardware_reservations(id, include, page, per_page)
-Retrieve all hardware reservations for a given project
-
-Provides a collection of hardware reservations for a given project.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project UUID | [required] |
-**include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
-
-### Return type
-
-[**crate::models::HardwareReservationList**](HardwareReservationList.md)
 
 ### Authorization
 
@@ -571,37 +536,6 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## find_licenses
-
-> crate::models::LicenseList find_licenses(id, include)
-Retrieve all licenses
-
-Provides a collection of licenses for a given project.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project UUID | [required] |
-**include** | Option<**String**> | related attributes to include |  |
-
-### Return type
-
-[**crate::models::LicenseList**](LicenseList.md)
-
-### Authorization
-
-[x_auth_token](../README.md#x_auth_token)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
 ## find_organization_projects
 
 > crate::models::ProjectList find_organization_projects(id, include, page, per_page)
@@ -637,7 +571,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_plans_by_project
 
-> crate::models::PlanList find_plans_by_project(id, include, page, per_page)
+> crate::models::PlanList find_plans_by_project(id, include)
 Retrieve all plans visible by the project
 
 Returns a listing of available plans for the given project
@@ -649,8 +583,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Project UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
@@ -825,9 +757,42 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## find_project_hardware_reservations
+
+> crate::models::HardwareReservationList find_project_hardware_reservations(id, include, page, per_page)
+Retrieve all hardware reservations for a given project
+
+Provides a collection of hardware reservations for a given project.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**id** | [**String**](.md) | Project UUID | [required] |
+**include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
+
+### Return type
+
+[**crate::models::HardwareReservationList**](HardwareReservationList.md)
+
+### Authorization
+
+[x_auth_token](../README.md#x_auth_token)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## find_project_invitations
 
-> crate::models::InvitationList find_project_invitations(id, project_id, include, page, per_page)
+> crate::models::InvitationList find_project_invitations(project_id, include, page, per_page)
 Retrieve project invitations
 
 Returns all invitations in a project.
@@ -837,7 +802,6 @@ Returns all invitations in a project.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project ID | [required] |
 **project_id** | [**String**](.md) | Project UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
 **page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
@@ -859,9 +823,42 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## find_project_licenses
+
+> crate::models::LicenseList find_project_licenses(id, include, page, per_page)
+Retrieve all licenses
+
+Provides a collection of licenses for a given project.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**id** | [**String**](.md) | Project UUID | [required] |
+**include** | Option<**String**> | related attributes to include |  |
+**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
+**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
+
+### Return type
+
+[**crate::models::LicenseList**](LicenseList.md)
+
+### Authorization
+
+[x_auth_token](../README.md#x_auth_token)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## find_project_memberships
 
-> crate::models::MembershipList find_project_memberships(id, project_id, include, page, per_page)
+> crate::models::MembershipList find_project_memberships(project_id, include, page, per_page)
 Retrieve project memberships
 
 Returns all memberships in a project.
@@ -871,7 +868,6 @@ Returns all memberships in a project.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**id** | [**String**](.md) | Project ID | [required] |
 **project_id** | [**String**](.md) | Project UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
 **page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |

@@ -1,6 +1,6 @@
 # \PlansApi
 
-All URIs are relative to *http://api.packet.net*
+All URIs are relative to *https://api.equinix.com/metal/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -42,7 +42,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_plans_by_organization
 
-> crate::models::PlanList find_plans_by_organization(id, include, page, per_page)
+> crate::models::PlanList find_plans_by_organization(id, include)
 Retrieve all plans visible by the organization
 
 Returns a listing of available plans for the given organization
@@ -54,8 +54,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Organization UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
@@ -75,7 +73,7 @@ Name | Type | Description  | Required | Notes
 
 ## find_plans_by_project
 
-> crate::models::PlanList find_plans_by_project(id, include, page, per_page)
+> crate::models::PlanList find_plans_by_project(id, include)
 Retrieve all plans visible by the project
 
 Returns a listing of available plans for the given project
@@ -87,8 +85,6 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **id** | [**String**](.md) | Project UUID | [required] |
 **include** | Option<**String**> | related attributes to include |  |
-**page** | Option<**i32**> | page to display, default to 1, max 100_000 |  |
-**per_page** | Option<**i32**> | items per page, default to 10, max 1_000 |  |
 
 ### Return type
 
